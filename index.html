@@ -3,66 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>testando</title>
+    <link rel="stylesheet" href="/style.css">
+    <title>Dawas Prod</title>
 </head>
-<body style="background-color: darkslategrey;">
+<body>
+    <nav>
+        <div class="dropdown">
+
+            <button><a href="#" class="home">Home</a></button>
+
+            <div class="Projetos">
+                <button>Projetos</button>
+                <ul>
+                    <li><a href="#">Bots</a></li>
+                    <li><a href="#">Spam</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagran</a></li>
+                </ul>
+            </div>
+
+            <div class="Trabalhos">
+                <button> Trabalhos</button>
+                <ul>
+                    <li><a href="#">Placeholder</a></li>
+                    <li><a href="#">Placeholder</a></li>
+                    <li><a href="#">Placeholder</a></li>
+                    <li><a href="#">Placeholder</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
 
     <header>
-        <h1> Me ajude a coletar dados</h1>
-        <p>
-            Este site esta em desenvolvimento eu literalmete
-            fiz ele em menos de 1 hora para testar, então apenas um 
-            pequeno grupo de pessoar ira ver ele nesse desgin atual.
-        </p>
-        <hr><hr>
-    </header>
-    <main>
-        <p style="background-color: rgba(250, 246, 215, 0.562);">
-            Primeiramente obrigado por estar me ajudando! Meu nome é 
-            joão Laurindo e eu estou cursando análise e estatística de dados
-            pela alura. Para ter uma experiência maior e mais realísta na area 
-            eu decidi criar um formulário para que eu mesmo consiga coletar 
-            os dados que irei trabalhar.
-        </p>
+        <div class="secao">
+            <h1> Ajude-me a coletar dados</h1>
+            <aside>
+                Este site esta em desenvolvimento. Apenas um 
+                pequeno grupo de pessoar ira ver ele nesse desgin atual.
+            </aside>
+        </div>
+        
 
-        <p style="background-color: rgba(250, 246, 215, 0.562);">
-            Os dados coletados são informados por você mesmo e você tem total
-            liberdade para optar quais dados deseja passar ou não.
-            Caso queira conferir o código fonte, clique  <a href="https://github.com/Da-was" target="_blank"> aqui</a>
-        </p>
-        <hr><hr>
+    </header>
+    <br><br>
+    <main>
+        <div class = "secao">
+            <p>
+                Primeiramente obrigado por estar me ajudando! Meu nome é 
+                joão Laurindo e eu estou cursando análise e estatística de dados
+                pela alura. Para ter uma experiência maior e mais realísta na area 
+                eu decidi criar um formulário para que eu mesmo consiga coletar 
+                os dados que irei trabalhar.
+            </p>
+    
+            <p>
+                Os dados coletados são informados por você mesmo e você tem total
+                liberdade para optar quais dados deseja passar ou não.
+                Caso queira conferir o código fonte, clique  <a href="https://github.com/Da-was" target="_blank"> aqui</a>
+            </p>
+        </div>
         
     </main>
     <footer>
+        <br>
         <form name="dados" netlify>
             
-            <div>
-                <h3>
-                    Suas informações
-                </h3>
-                <p>
-                    <input type="text" name="Nome" placeholder="Nome">
-                    <input type="number" name="Idade" placeholder="Idade">
-                    <input type="email" name="Email" placeholder="Email(opicional)">
+            <section>
+                <div class = "secao" >
+
+                    <h2 style="display:flex;justify-content: space-around; align-items: center;">
+                        Suas informações
+                    </h2>
+
+                    <p style="display:flex;justify-content: space-around; align-items: center;">
+                        <input type="text" name="Nome" placeholder="Nome">
+                        <input type="number" name="Idade" placeholder="Idade">
+                        <input type="email" name="Email" placeholder="Email(opicional)">
+        
+                    </p>
+
+                </div>
+
+                <br>
+
+                <div class = "secao">
+
+                    <h3 style="display:flex;justify-content: space-around; align-items: center;">
+                        Data de nascimento
+                    </h3>
+
+                    <p style="display:flex;justify-content: space-around; align-items: center;">
+                        <input type="date" name="Nacismento" >
     
-                </p>
-                <h3>
-                    Data de nascimento
-                </h3>
-                <p>
-                    <input type="date" name="Nacismento" >
+                    </p>
 
-                </p>
-                <h3>
-                    Nos de a sua opinião sobre o layout do site ou sobre que tipo de informação
-                    você acha relevante coletar.
-                </h3>
-                <p>
-                    <textarea name="Sugestões" placeholder="Sua opinião" cols="30" rows="10"></textarea>
+                </div>
+                <br>
 
-                </p>
-                <button>Mandar informação</button>
-            </div>
+                <div class="secao">
+                    <h3 style="display:flex;justify-content: space-around; align-items: center;">
+
+                        Nos de a sua opinião sobre o layout do site ou sobre que tipo de informação
+                        você acha relevante coletar.
+
+                    </h3>
+                    <p style="display:flex;justify-content: space-around; align-items: center;">
+
+                        <textarea name="Sugestões" placeholder="Sua opinião" cols="30" rows="10"></textarea>
+    
+                    </p>
+                </div>
+
+                <br>
+
+                <div class style="display:flex;justify-content: space-around; align-items: center;">
+                    
+                    <button class="mybutton"  > Enviar  informação</button>
+
+                </div>
+               
+            </section>
            
         </form>
 
