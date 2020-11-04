@@ -1,22 +1,93 @@
 
 body{
 
-    background: linear-gradient( #051a2d, #233c55);
+    background: linear-gradient(to bottom , #051a2d, #233c55);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 p{
 
     font-size: 18px;
     
 }
+img {
+    max-width: 75%;
+    height: auto;
+  }
 .secao{
 
     background: rgb(223, 223, 223);
+    margin-left: 25px;
+    margin-right: 25px;
     border-style:solid;
     border-width: 2px;
     padding: 3px;
     border-radius: 5px;
     
     
+}
+
+.secao img{
+
+    border: solid;
+    border-color: black;
+    margin-bottom: 10px;
+
+}
+.secao input{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    position: relative;
+    border-radius: 50px;
+    background: none;
+    padding: 10px;
+    margin: 10px auto;
+    outline: none;
+    transition: 0.25s;
+    width: 200px ;
+
+
+}
+
+.secao textarea{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    position: relative;
+    border-radius: 50px;
+    background: none;
+    padding: 20px;
+    margin: 10px auto;
+    outline: none;
+    transition: 0.25s;
+    width: 200px ;
+
+    
+}
+.secao a{
+
+    color: red;
+    text-decoration: none;
+
+}
+.secao a:hover{
+
+    color: darkred;
+    text-decoration: underline;
+
+}
+.secao input:focus, .secao textarea:focus{
+    
+    width: 280px;
+    border-color: darkolivegreen;
+
 }
 .dropdown{
     height: 10vh;
@@ -91,8 +162,16 @@ p{
 
 }
 .mybutton{
+    
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
 
-    background: white;
+}
+.mybutton button{
+
+    
+    background-color:  rgb(223, 223, 223);
     border-radius:10px;
     height: 30px;
     width: 60;
@@ -100,4 +179,9 @@ p{
     border-width: 1px;
     font-family: monospace;
     font-size: 18px;
+    margin-bottom: 11px;
+}
+.mybutton button:hover{
+
+    background: darkcyan;
 }
